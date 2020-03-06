@@ -6,7 +6,11 @@ namespace TASKS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This NEVER works!");
+            Menu menu = new Menu();
+            var choice = menu.DisplayMenu();                                   
+
+            Console.WriteLine($"you chose: {choice}");
+            
         }
     }
 }
